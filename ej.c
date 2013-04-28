@@ -7,17 +7,17 @@
 void type_of(json_t *root){
 	json_type type = json_typeof(root);
 	switch (type) {
-		case JSON_NULL: printf("json_type_null\n");
+		case JSON_NULL: printf("type_null\n");
 			break;
-		case JSON_REAL: printf("json_type_double\n");
+		case JSON_REAL: printf("type_real\n");
 			break;
-		case JSON_INTEGER: printf("json_type_int\n");
+		case JSON_INTEGER: printf("type_int\n");
 			break;
-		case JSON_OBJECT: printf("json_type_object\n");
+		case JSON_OBJECT: printf("type_object\n");
 			break;
-		case JSON_ARRAY: printf("json_type_array\n");
+		case JSON_ARRAY: printf("type_array\n");
 			break;
-		case JSON_STRING: printf("json_type_string\n");
+		case JSON_STRING: printf("type_string\n");
 			break;
 	}
 }
