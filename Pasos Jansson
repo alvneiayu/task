@@ -1,5 +1,7 @@
-TUTORIAL http://linuxprograms.wordpress.com/2010/05/20/json-c-libjson-tutorial/
+JANSSON: http://www.digip.org/jansson/
+JANSSON API: http://www.digip.org/jansson/doc/2.4/apiref.html#
 LICENSE: MIT
+GPL compatible 	Yes (http://en.wikipedia.org/wiki/MIT_License)
 
 1-. How to configurate and install
 
@@ -9,5 +11,4 @@ LICENSE: MIT
 	make install
 
 2-. How to compile the code
-
-	cc -o prog prog.c -ljansson
+	cc -o prog prog.c -ljansson -std=c99
