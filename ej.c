@@ -23,12 +23,12 @@ void type_of(json_t *root){
 }
 json_t* load_file(char *url){
 	json_t *json;
-    json_error_t error;
-    json = json_load_file(url, 0, &error);
-    if(!json) {
-        printf("Error in the line: %d: %s \n",error.line, error.text);
-    }
-    return json;
+	json_error_t error;
+	json = json_load_file(url, 0, &error);
+	if(!json) {
+		printf("Error in the line: %d: %s \n",error.line, error.text);
+	}
+	return json;
 }
 
 int main(void) {
@@ -39,7 +39,6 @@ int main(void) {
 	root = load_file("ejemplo2.json");
 	printf("Type of the root: ");
 	type_of(root);
-	void *iter = json_object_iter(root);
 	json_object_foreach(root, key, value) {
 		printf("Root's key\n");
 		printf("	-%s\n",key);
